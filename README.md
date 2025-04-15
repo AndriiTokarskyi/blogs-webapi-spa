@@ -1,3 +1,5 @@
+bower install -f
+
 # Base SPA
 Documentation
 
