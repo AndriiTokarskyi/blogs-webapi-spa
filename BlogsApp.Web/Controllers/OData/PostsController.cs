@@ -69,8 +69,7 @@ namespace BlogsApp.Web.Controllers.OData
                 return BadRequest(ModelState);
             }
 
-            string osDescription = RuntimeInformation.OSDescription;
-            post.Content += $" (Running on: {osDescription})";
+            post.Content += $" (Created on OS: {RuntimeInformation.OSDescription}, Framework: {RuntimeInformation.FrameworkDescription})";
 
             _db.Posts.Add(post);
             await _db.SaveChangesAsync();

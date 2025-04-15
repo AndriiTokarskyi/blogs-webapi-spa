@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace BlogsApp.Core.Models
 {
-	public class SpaContext : DbContext
-	{
-		public DbSet<Blog> Blogs { get; set; }
-		public DbSet<Post> Posts { get; set; }
-	}
+    public class SpaContext : DbContext
+    {
+        public DbSet<Blog> Blogs { get; set; }
+        public DbSet<Post> Posts { get; set; }
+    }
 }

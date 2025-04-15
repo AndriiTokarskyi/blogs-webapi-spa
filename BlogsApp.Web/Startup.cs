@@ -49,7 +49,7 @@ namespace BlogsApp.Web
 
             config.EnableSwagger(c =>
                 {
-                    c.SingleApiVersion("v1", $"BlogsApp.Web running on {RuntimeInformation.OSDescription}");
+                    c.SingleApiVersion("v1", $"BlogsApp.Web - running on OS: {RuntimeInformation.OSDescription}, Framework: {RuntimeInformation.FrameworkDescription}");
                     c.OperationFilter<SwaggerFilter>();
                     c.PrettyPrint();
                     c.IgnoreObsoleteActions();
